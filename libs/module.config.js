@@ -146,6 +146,22 @@ const moduleConfig = {
 
                 generatedIndexHTMLFile : "gen.pipe.index.html",
                 indexHTMLTemplateFileLocation : path.join(appBasePath, "pipe", "pipe.index.html")
+            },
+            {
+                generatedIndexJSName : "gen.http.index",
+                indexJSLocation : path.join(appBasePath, "http", "http.index.ts"),
+
+                generatedIndexCSSName : "gen.http.style",
+                cssFiles : [path.join(appBasePath, "http", "styles", "http.style.css")],
+
+                generatedVendorJSName : "gen.http.jsvendor",
+                jsVendors : path.join(appBasePath, "http", "http.jsvendor.ts"),
+
+                generatedVendorCSSName : "gen.http.css.vendor",
+                vendorCSSFiles : [path.join(projectBasePath, "node_modules", "bootstrap", "dist", "css", "bootstrap.css")],
+
+                generatedIndexHTMLFile : "gen.http.index.html",
+                indexHTMLTemplateFileLocation : path.join(appBasePath, "http", "http.index.html")
             }
         ]
     }
